@@ -12,6 +12,9 @@ def analyze_logs(logs):
             print("Login successful")
 
     print("Total failed login attempts:", failed_count)
+    
+   if failed_count > 0:
+        print("Security alert: Review failed login attempts.")
 
 
 logs = [
